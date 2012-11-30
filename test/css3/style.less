@@ -1,0 +1,195 @@
+
+@import "../../less/sugar/utils";
+@import "../../less/sugar/css3";
+
+
+body {
+	font-size:13px;
+	width:640px;
+	margin:0 auto;
+}
+
+dl {
+	dt {
+		font-weight:bold;
+		font-size:16px;
+		margin:1em 0;
+	}
+	dd {
+		margin:2em;
+	}
+}
+
+.demo-box() {
+	.inline-block;
+	.square(100px);
+	margin:0 16px 16px 0;
+	background-color:#c00;
+	.border-radius(8px);
+	vertical-align:middle;
+}
+
+.demo-container {
+	.inline-block;
+	width:100px;
+	padding:10px;
+	background-color:#ddd;
+	margin-right:8px;
+
+	.item {
+		.demo-box;
+		margin:0;
+	}
+}
+
+
+.demo-placeholder {
+	.placeholder(#c00);
+}
+
+.demo-border-radius {
+	.demo-box;
+
+	&.demo-01 {
+		.border-radius(10px);
+	}
+	&.demo-02 {
+		.border-radius(10px 10px 0px 0px);
+	}
+	&.demo-03 {
+		.border-radius(0px 0px 10px 10px);
+	}
+}
+
+.demo-box-shadow {
+	.demo-box;
+
+	&.demo-01 {
+		.box-shadow(0px 0px 8px #666);
+	}
+	&.demo-02 {
+		.box-shadow(inset 0px 0px 8px #666);
+	}
+	&.demo-03 {
+		.box-shadow(~"0px 0px 8px #333, inset 0px 0px 8px #fff, inset 0px 0px 8px #fff");
+	}
+}
+
+.demo-transition {
+	.demo-box;
+
+	.transition(background-color 1s linear 0s);
+
+	&:hover {
+		background-color:#06c;
+	}
+}
+
+.demo-rotate {
+	.demo-box;
+
+	.rotate(30deg);
+}
+
+
+.demo-scale {
+	.demo-box;
+
+	&.demo-01 {
+	}
+	&.demo-02 {
+		.scale(0.5);
+	}
+	&.demo-03 {
+		.scale(1.5);
+	}
+}
+
+.demo-translate {
+	.demo-container;
+
+	&.demo-02 {
+		.item {
+			.translate(-15px, -15px);
+		}
+	}
+	&.demo-03 {
+		.item {
+			.translate(15px, 15px);
+		}
+	}
+}
+
+.demo-skew {
+	.demo-container;
+
+	&.demo-01 {
+		.item {
+			.skew(15deg, 0);
+		}
+	}
+	&.demo-02 {
+		.item {
+			.skew(0, 15deg);
+		}
+	}
+	&.demo-03 {
+		.item {
+			.skew(-15deg, -15deg);
+		}
+	}
+}
+
+.demo-background-clip {
+	.demo-container;
+
+	.item {
+		border:5px solid rgba(255,255,255, .5);
+		padding:5px;
+		.square(80px);
+	}
+	&.demo-01 {
+		.item {
+			.background-clip(border-box);
+		}
+	}
+	&.demo-02 {
+		.item {
+			.background-clip(padding-box);
+		}
+	}
+	&.demo-03 {
+		.item {
+			.background-clip(content-box);
+		}
+	}
+}
+
+.demo-background-size {
+	.demo-box;
+	background-image:url(./demo.png);
+
+	&.demo-01 {
+
+	}
+	&.demo-02 {
+		.background-size(50%);
+	}
+	&.demo-03 {
+		.background-size(200%);
+	}
+}
+
+.demo-user-select {
+	&.demo-01 {
+		.user-select(text);
+	}
+	&.demo-02 {
+		.user-select(none);
+	}
+}
+
+.demo-content-columns {
+	.content-columns(3, 1em);
+}
+

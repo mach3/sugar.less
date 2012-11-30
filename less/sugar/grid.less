@@ -1,0 +1,47 @@
+//
+// Grid System for sugar.less
+// --------------------------
+// 
+// require : utils
+// version : 2012-1123
+//
+
+// vars
+
+@grid-column-width : 60px;
+@grid-gutter-width : 20px;
+
+// grid
+
+#grid {
+
+	.row(@num: 1, @col: @grid-column-width, @gut: @grid-gutter-width){
+		.inline-collapse;
+		width: @num * (@col + @gut) + 1;
+		margin-bottom: @gut;
+		margin-top: @gut;
+	}
+
+	.col(@num:1, @col: @grid-column-width, @gut: @grid-gutter-width){
+		.inline-block;
+		width: @num * @col + ((@num - 1 ) * @gut);
+		margin-right: @gut;
+	}
+
+	.block {
+
+		.row(@num: 1, @col: @grid-column-width, @gut: @grid-gutter-width){
+			.clearfix;
+			width: @num * (@col + @gut) + 1;
+			margin-bottom: @gut;
+			margin-top: @gut;
+		}
+
+		.col(@num:1, @col: @grid-column-width, @gut: @grid-gutter-width){
+			.left;
+			width: @num * @col + ((@num - 1) * @gut);
+			margin-right: @gut;
+		}
+	}
+
+}

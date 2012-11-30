@@ -1,0 +1,49 @@
+.test {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+.test-horizontal {
+  background-color: #003366;
+  background-image: -moz-linear-gradient(left, #0066cc, #003366);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#0066cc), to(#003366));
+  background-image: -webkit-linear-gradient(left, #0066cc, #003366);
+  background-image: -o-linear-gradient(left, #0066cc, #003366);
+  background-image: linear-gradient(to right, #0066cc, #003366);
+  background-repeat: repeat-x;
+}
+.test-vertical {
+  background-color: #0052a3;
+  background-image: -moz-linear-gradient(top, #0066cc, #003366);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0066cc), to(#003366));
+  background-image: -webkit-linear-gradient(top, #0066cc, #003366);
+  background-image: -o-linear-gradient(top, #0066cc, #003366);
+  background-image: linear-gradient(to bottom, #0066cc, #003366);
+  background-repeat: repeat-x;
+}
+.test-directional {
+  background-color: #003366;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(45deg, #0066cc, #003366);
+  background-image: -webkit-linear-gradient(45deg, #0066cc, #003366);
+  background-image: -o-linear-gradient(45deg, #0066cc, #003366);
+  background-image: linear-gradient(45deg, #0066cc, #003366);
+}
+.test-vertical-three-colors {
+  background-color: #b82952;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0066cc), color-stop(50%, #cc0066), to(#66cc00));
+  background-image: -webkit-linear-gradient(#0066cc, #cc0066 50%, #66cc00);
+  background-image: -moz-linear-gradient(top, #0066cc, #cc0066 50%, #66cc00);
+  background-image: -o-linear-gradient(#0066cc, #cc0066 50%, #66cc00);
+  background-image: linear-gradient(#0066cc, #cc0066 50%, #66cc00);
+  background-repeat: no-repeat;
+}
+.test-radial {
+  background-color: #003366;
+  background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(#0066cc), to(#003366));
+  background-image: -webkit-radial-gradient(circle, #0066cc, #003366);
+  background-image: -moz-radial-gradient(circle, #0066cc, #003366);
+  background-image: -o-radial-gradient(circle, #0066cc, #003366);
+  background-repeat: no-repeat;
+}

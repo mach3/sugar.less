@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+//
+// Fonts for sugar.less
+// --------------------
+//
+// require : none
+// version : 2012-1128
+//
+
+
+// Japanese
+
+@font-family-sans: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+@font-family-serif: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+@font-family-monospace: monospace;
+
+// English
+
+@font-family-sans-en: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif-en: Georgia, "Times New Roman", Times, serif;
+@font-family-monospace-en: Monaco, Menlo, Consolas, "Courier New", monospace;
+
+
+#fonts {
+
+	.sans (){
+		font-family: @font-family-sans;
+	}
+	.serif (){
+		font-family: @font-family-serif;
+	}
+	.monospace (){
+		font-family: @font-family-monospace;
+	}
+
+	.en {
+		.sans (){
+			font-family: @font-family-sans-en;
+		}
+		.serif (){
+			font-family: @font-family-serif-en;
+		}
+		.monospace (){
+			font-family: @font-family-monospace;
+		}
+	}
+
+}
+

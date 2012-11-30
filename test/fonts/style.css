@@ -1,0 +1,37 @@
+@charset "utf-8";
+body {
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+h1 {
+  width: 640px;
+  margin: 1em auto;
+}
+dl {
+  width: 640px;
+  margin: 1em auto;
+}
+dl dt {
+  font-weight: bold;
+  font-size: 16px;
+}
+dl dd {
+  font-size: 13px;
+}
+dl dd .sans-ja {
+  font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+}
+dl dd .serif-ja {
+  font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+dl dd .mono-ja {
+  font-family: monospace;
+}
+dl dd .sans-en {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+dl dd .serif-en {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+dl dd .mono-en {
+  font-family: monospace;
+}

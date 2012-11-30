@@ -1,0 +1,136 @@
+//
+// Utils for sugar.less
+// ---------------------
+// requires : none
+// version : 2012-1128
+//
+
+
+// clearfix and float classes
+
+.clearfix {
+	*zoom: 1;
+
+	&:before, &:after {
+		display: table;
+		content: "";
+		line-height: 0;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+// show and hide classes
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+// inline-block class
+
+.inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+// opacity mixin
+
+.opacity (@opacity){
+	opacity: @opacity / 100;
+	filter: ~"alpha(opacity=@{opacity})";
+}
+
+// remove white space
+// when use inline-block as columns
+
+.inline-collapse {
+	letter-spacing: -0.36em;
+	& > * {
+		letter-spacing: normal;
+	}
+}
+
+// width and height shorthand
+
+.size (@width, @height){
+	width: @width;
+	height: @height;
+}
+
+.square (@size){
+	width: @size;
+	height: @size;
+}
+
+
+// CSS sprite shorthand
+ 
+.sprite (@x, @y, @w, @h){
+	background-repeat: no-repeat;
+	background-position: @x @y;
+	width: @w;
+	height: @h;
+}
+
+// text overflow shorthand
+
+.text-overflow (){
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// resize
+
+.resizable (@direction) {
+	resize: @direction; // Options: horizontal, vertical, both
+	overflow: auto; // Safari fix
+}
+
+
+// border-arrow
+
+@border-arrow-size: 4px;
+@border-arrow-color: #000;
+
+.border-arrow {
+	.bottom (@size: @border-arrow-size, @color: @border-arrow-color){
+		.inline-block;
+		border-width:@size;
+		border-style:solid;
+		border-color:@color transparent transparent transparent;
+	}
+	.top (@size: @border-arrow-size, @color: @border-arrow-color){
+		.inline-block;
+		border-width:@size;
+		border-style:solid;
+		border-color:transparent transparent @color transparent;
+	}
+	.right (@size: @border-arrow-size, @color: @border-arrow-color){
+		.inline-block;
+		border-width:@size;
+		border-style:solid;
+		border-color:transparent transparent transparent @color;
+	}
+	.left (@size: @border-arrow-size, @color: @border-arrow-color){
+		.inline-block;
+		border-width:@size;
+		border-style:solid;
+		border-color:transparent @color transparent transparent;
+	}
+}
+
