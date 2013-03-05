@@ -75,11 +75,11 @@ h1 {
 ### less/sugar/
 
 - normalize.less : via [normalize.css](http://necolas.github.com/normalize.css/)
-- [utils.less](./doc/utils.md) : 共有のユーティリティミックスイン・クラス群
-- [fonts.less](./doc/fonts.md) : フォント定義
-- [grid.less](./doc/grid.md) : シンプルなグリッドシステム
-- [css3.less](./doc/css3.md) : CSS3プロパティのミックスイン 
-- [gradient.less](./doc/gradient.md) : グラデーション用ミックスイン 
+- [utils.less](./docs/utils.md) : 共有のユーティリティミックスイン・クラス群
+- [fonts.less](./docs/fonts.md) : フォント定義
+- [grid.less](./docs/grid.md) : シンプルなグリッドシステム
+- [css3.less](./docs/css3.md) : CSS3プロパティのミックスイン 
+- [gradient.less](./docs/gradient.md) : グラデーション用ミックスイン 
 
 
 ## 作者
