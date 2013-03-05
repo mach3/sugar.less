@@ -5,6 +5,7 @@ module.exports = function(grunt){
 	var cp = require("child_process");
 
 	grunt.loadNpmTasks("grunt-contrib-less");
+	grunt.loadNpmTasks("grunt-contrib-watch");
 
 	grunt.initConfig({
 		less : {
@@ -25,7 +26,7 @@ module.exports = function(grunt){
 					"less/**",
 					"test/*/style.less",
 				],
-				tasks : "lessc:test"
+				tasks : "less:test"
 			}
 		}
 	});

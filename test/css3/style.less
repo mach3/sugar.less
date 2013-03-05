@@ -25,7 +25,7 @@ dl {
 	.square(100px);
 	margin:0 16px 16px 0;
 	background-color:#c00;
-	.border-radius(8px);
+	#css3 > .border-radius(8px);
 	vertical-align:middle;
 }
 
@@ -44,20 +44,20 @@ dl {
 
 
 .demo-placeholder {
-	.placeholder(#c00);
+	#css3 > .placeholder(#c00);
 }
 
 .demo-border-radius {
 	.demo-box;
 
 	&.demo-01 {
-		.border-radius(10px);
+		#css3 > .border-radius(10px);
 	}
 	&.demo-02 {
-		.border-radius(10px 10px 0px 0px);
+		#css3 > .border-radius(10px 10px 0px 0px);
 	}
 	&.demo-03 {
-		.border-radius(0px 0px 10px 10px);
+		#css3 > .border-radius(0px 0px 10px 10px);
 	}
 }
 
@@ -65,20 +65,20 @@ dl {
 	.demo-box;
 
 	&.demo-01 {
-		.box-shadow(0px 0px 8px #666);
+		#css3 > .box-shadow(0px 0px 8px #666);
 	}
 	&.demo-02 {
-		.box-shadow(inset 0px 0px 8px #666);
+		#css3 > .box-shadow(inset 0px 0px 8px #666);
 	}
 	&.demo-03 {
-		.box-shadow(~"0px 0px 8px #333, inset 0px 0px 8px #fff, inset 0px 0px 8px #fff");
+		#css3 > .box-shadow(~"0px 0px 8px #333, inset 0px 0px 8px #fff, inset 0px 0px 8px #fff");
 	}
 }
 
 .demo-transition {
 	.demo-box;
 
-	.transition(background-color 1s linear 0s);
+	#css3 > .transition(background-color 1s linear 0s);
 
 	&:hover {
 		background-color:#06c;
@@ -88,7 +88,7 @@ dl {
 .demo-rotate {
 	.demo-box;
 
-	.rotate(30deg);
+	#css3 > .rotate(30deg);
 }
 
 
@@ -98,10 +98,10 @@ dl {
 	&.demo-01 {
 	}
 	&.demo-02 {
-		.scale(0.5);
+		#css3 > .scale(0.5);
 	}
 	&.demo-03 {
-		.scale(1.5);
+		#css3 > .scale(1.5);
 	}
 }
 
@@ -110,12 +110,12 @@ dl {
 
 	&.demo-02 {
 		.item {
-			.translate(-15px, -15px);
+			#css3 > .translate(-15px, -15px);
 		}
 	}
 	&.demo-03 {
 		.item {
-			.translate(15px, 15px);
+			#css3 > .translate(15px, 15px);
 		}
 	}
 }
@@ -125,17 +125,17 @@ dl {
 
 	&.demo-01 {
 		.item {
-			.skew(15deg, 0);
+			#css3 > .skew(15deg, 0);
 		}
 	}
 	&.demo-02 {
 		.item {
-			.skew(0, 15deg);
+			#css3 > .skew(0, 15deg);
 		}
 	}
 	&.demo-03 {
 		.item {
-			.skew(-15deg, -15deg);
+			#css3 > .skew(-15deg, -15deg);
 		}
 	}
 }
@@ -150,17 +150,17 @@ dl {
 	}
 	&.demo-01 {
 		.item {
-			.background-clip(border-box);
+			#css3 > .background-clip(border-box);
 		}
 	}
 	&.demo-02 {
 		.item {
-			.background-clip(padding-box);
+			#css3 > .background-clip(padding-box);
 		}
 	}
 	&.demo-03 {
 		.item {
-			.background-clip(content-box);
+			#css3 > .background-clip(content-box);
 		}
 	}
 }
@@ -173,23 +173,23 @@ dl {
 
 	}
 	&.demo-02 {
-		.background-size(50%);
+		#css3 > .background-size(50%);
 	}
 	&.demo-03 {
-		.background-size(200%);
+		#css3 > .background-size(200%);
 	}
 }
 
 .demo-user-select {
 	&.demo-01 {
-		.user-select(text);
+		#css3 > .user-select(text);
 	}
 	&.demo-02 {
-		.user-select(none);
+		#css3 > .user-select(none);
 	}
 }
 
 .demo-content-columns {
-	.content-columns(3, 1em);
+	#css3 > .content-columns(3, 1em);
 }
 
