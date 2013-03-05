@@ -30,7 +30,7 @@
 .inline-collapse {
   letter-spacing: -0.36em;
 }
-.inline-collapse  > * {
+.inline-collapse > * {
   letter-spacing: normal;
 }
 body {
@@ -262,7 +262,7 @@ dl dd {
 .demo-skew.demo-01 .item {
   -webkit-transform: skew(15deg, 0);
   -moz-transform: skew(15deg, 0);
-  -ms-transform: skewx(15deg) skewy(0);
+  -ms-transform: skewX(15deg) skewY(0);
   -o-transform: skew(15deg, 0);
   transform: skew(15deg, 0);
   -webkit-backface-visibility: hidden;
@@ -270,7 +270,7 @@ dl dd {
 .demo-skew.demo-02 .item {
   -webkit-transform: skew(0, 15deg);
   -moz-transform: skew(0, 15deg);
-  -ms-transform: skewx(0) skewy(15deg);
+  -ms-transform: skewX(0) skewY(15deg);
   -o-transform: skew(0, 15deg);
   transform: skew(0, 15deg);
   -webkit-backface-visibility: hidden;
@@ -278,7 +278,7 @@ dl dd {
 .demo-skew.demo-03 .item {
   -webkit-transform: skew(-15deg, -15deg);
   -moz-transform: skew(-15deg, -15deg);
-  -ms-transform: skewx(-15deg) skewy(-15deg);
+  -ms-transform: skewX(-15deg) skewY(-15deg);
   -o-transform: skew(-15deg, -15deg);
   transform: skew(-15deg, -15deg);
   -webkit-backface-visibility: hidden;

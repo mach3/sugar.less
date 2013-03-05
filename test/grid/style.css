@@ -30,7 +30,7 @@
 .inline-collapse {
   letter-spacing: -0.36em;
 }
-.inline-collapse  > * {
+.inline-collapse > * {
   letter-spacing: normal;
 }
 .test-default .test-row-12 {
@@ -40,7 +40,7 @@
   margin-top: 20px;
   background-color: #ddd;
 }
-.test-default .test-row-12  > * {
+.test-default .test-row-12 > * {
   letter-spacing: normal;
 }
 .test-default .test-col {

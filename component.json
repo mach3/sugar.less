@@ -1,0 +1,8 @@
+{
+	"name" : "sugar-less",
+	"version" : "0.9.0",
+	"description" : "Simple utilities for less",
+	"dependencies" : {
+		"normalize-css" : null
+	}
+}
