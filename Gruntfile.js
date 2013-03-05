@@ -25,7 +25,7 @@ module.exports = function(grunt){
 					"less/**",
 					"test/*/style.less",
 				],
-				tasks : "less:test"
+				tasks : "lessc:test"
 			}
 		}
 	});

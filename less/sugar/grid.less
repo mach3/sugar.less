@@ -3,7 +3,7 @@
 // --------------------------
 // 
 // require : utils
-// version : 2012-1123
+// version : 2012-1214
 //
 
 // vars
@@ -20,13 +20,20 @@
 		width: @num * (@col + @gut) + 1;
 		margin-bottom: @gut;
 		margin-top: @gut;
+		line-height:0;
 	}
 
 	.col(@num:1, @col: @grid-column-width, @gut: @grid-gutter-width){
 		.inline-block;
 		width: @num * @col + ((@num - 1 ) * @gut);
 		margin-right: @gut;
+		line-height:normal;
 	}
+
+	.align(@num:1, @col: @grid-column-width, @gut: @grid-gutter-width){
+		margin-left: @num * (@col + @gut);
+	}
+
 
 	.block {
 
@@ -41,6 +48,10 @@
 			.left;
 			width: @num * @col + ((@num - 1) * @gut);
 			margin-right: @gut;
+		}
+
+		.align(@num:1, @col: @grid-column-width, @gut: @grid-gutter-width){
+			margin-left: @num * (@col + @gut);
 		}
 	}
 
