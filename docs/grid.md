@@ -1,14 +1,24 @@
 # Grid
 
 シンプルなグリッドシステムを提供するコンポーネント。
-名前空間*#grid*を使用します。
 
-依存コンポーネント : utils
+- 依存コンポーネント : utils
 
 ```less
 @import "less/sugar/utils";
 @import "less/sugar/grid";
 ```
+
+## 名前空間
+
+名前空間 *#grid* を使用します。
+
+```less
+.my-grid-row {
+	#grid > .row(12);
+}
+```
+
 
 ## 変数
 
@@ -64,8 +74,8 @@
 
 ### .block
 
-*#gird > .block*を使用する事で、*display: block*とフロートでグリッドを作成します。  
-（デフォルトでは*inline-block*です）
+*#gird > .block* を使用する事で、 *display: block* とフロートでグリッドを作成します。  
+（デフォルトでは *inline-block* です）
 
 ```less
 .my-grid-row {

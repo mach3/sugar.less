@@ -1,10 +1,12 @@
 # Fonts
 
-共有フォント指定用のコンポーネントです。名前空間 *#fonts* を使用します。
+共有フォント指定用のコンポーネントです。
+
+## 名前空間
+
+名前空間 *#fonts* を使用します。
 
 ```less
-@import "less/sugar/fonts";
-
 h1 {
 	#fonts > .serif();
 }
