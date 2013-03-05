@@ -14,7 +14,7 @@ Less環境で*less/sugar.less*を読み込んで使いたい機能を使用す�
 
 例えば次のコードではユーティリティミックスインをレイアウトに活用しています。
 
-```css
+```
 @import "less/sugar";
 
 #container {
@@ -37,7 +37,7 @@ Less環境で*less/sugar.less*を読み込んで使いたい機能を使用す�
 
 例えば、共有ユーティリティのみを使用する場合は次のようになります。
 
-```css
+```
 @import "less/sugar/utils";
 ```
 
@@ -45,7 +45,7 @@ Less環境で*less/sugar.less*を読み込んで使いたい機能を使用す�
 
 *less/utils.less* にある共有のミックスインはベーシックなミックスインです。
 
-```css
+```
 .box {
 	.size(100px, 80px); // 100*80のサイズ指定をする
 }
@@ -55,7 +55,7 @@ Less環境で*less/sugar.less*を読み込んで使いたい機能を使用す�
 
 cs) [LESS | Namespace](http://lesscss.org/#-namespaces)
 
-```css
+```
 body {
 	#fonts > .sans(); // 和文のゴシック体を指定
 }
