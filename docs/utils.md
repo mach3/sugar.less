@@ -2,6 +2,18 @@
 
 ベーシックなユーティリティミックスインとクラス群を提供します。
 
+## 変数
+
+### @baseFontSize
+
+ベースとなるフォントサイズを指定します。
+.font-size() ミックスインで使用されます。
+
+### @imagePath
+
+画像ディレクトリへのパスを指定します。
+.background-image() / .background() ミックスインで使用されます。
+
 ## クラス
 
 ここで言う「クラス」とは、通常のCSSクラスとして利用できる物を指します。
@@ -86,6 +98,46 @@ CSSスプライトのショートハンド。
 	// background-position: 10px, 20px;
 	// width: 100px;
 	// height: 80px;
+}
+```
+
+### .background-image(@url)
+
+バックグラウンドイメージのショートハンド。
+画像格納ディレクトリを @imagePath で指定して使用します。
+
+```less
+@imagePath : "../images/";
+.item {
+	.background-image("foo.png");
+	// background-image: url(../images/foo.png);
+}
+```
+
+### .background(@url, @x:left, @y:top, @repeat:no-repeat, @color:transparent)
+
+バックグラウンド関連を一括して指定するショートハンド。
+
+```less
+@imagePath : "../images/";
+.item {
+	.background-image("foo.png", left, top, no-repeat, transparent);
+	// background-image: url("../images/foo.png");
+	// background-position: left top;
+	// background-repeat: no-repeat;
+	// background-color: transparent;
+}
+```
+
+### .font-size(@size:@baseFontSize, @base:@baseFontSize)
+
+フォントサイズをベースフォントサイズを元にしたemで指定する為のミックスイン。
+
+```less
+@baseFontSize : 16px;
+
+.item {
+	.font-size(13px); // font-size: 0.81em;
 }
 ```
 

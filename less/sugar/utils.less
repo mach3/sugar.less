@@ -5,6 +5,10 @@
 // version : 2012-1128
 //
 
+// vars
+
+@imagePath : "../img/";
+@baseFontSize : 16px;
 
 // clearfix and float classes
 
@@ -84,6 +88,27 @@
 	background-position: @x @y;
 	width: @w;
 	height: @h;
+}
+
+// background shorthands
+
+.background-image (@url){
+	@path : ~`@{imagePath} + @{url}`;
+	background-image: url(@path);
+}
+
+.background (@url, @x:left, @y:top, @repeat:no-repeat, @color:transparent){
+	.background-image(@url);
+	background-position: @x @y;
+	background-repeat: @repeat;
+	background-color: @color;
+}
+
+// font-size shorthand
+
+.font-size (@size:@baseFontSize, @base:@baseFontSize){
+	@font-size : ~`Math.round(parseInt("@{size}", 10) / parseInt("@{base}", 10) * 100) / 100 + "em"`;
+	font-size: @font-size;
 }
 
 // text overflow shorthand
