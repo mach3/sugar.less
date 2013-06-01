@@ -30,7 +30,7 @@
 .inline-collapse {
   letter-spacing: -0.36em;
 }
-.inline-collapse > * {
+.inline-collapse * {
   letter-spacing: normal;
 }
 body {
