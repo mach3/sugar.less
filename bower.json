@@ -1,0 +1,8 @@
+{
+	"name" : "sugar-less",
+	"version" : "0.9.2",
+	"main" : "less/sugar.less",
+	"dependencies" : {
+		"normalize-css" : "*"
+	}
+}
